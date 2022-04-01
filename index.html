@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <form id="interactiveForm" action="/main.js" class="container">
+    <div class="Rating-state" id="Rating-state">
+      <img src="images\icon-star.svg" alt="star">
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+      <div class="score-container">
+        <input type="radio" id="One" name="score" value="1">
+        <label for="1">1</label>
+        <input type="radio" id="Two" name="score" value="2">
+        <label for="2">2</label>
+        <input type="radio" id="Three" name="score" value="3">
+        <label for="3">3</label>
+        <input type="radio" id="Four" name="score" value="4">
+        <label for="4">4</label>
+        <input type="radio" id="Five" name="score" value="5">
+        <label for="5">5</label>
+      </div>
+      <button id="score-submit" type="button">Submit</button>
+    </div>
+    <div class="Thankyou-state tab" id="Thankyou-state">
+      <img src="images\illustration-thank-you.svg" alt="thank you image">
+      <p>You selected <span id="rating-score"></span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don&#39;t hesitate to get in touch!</p>
+    </div>
+  </form>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Patrick Messiter</a>.
+  </div>
+</body>
+</html>
