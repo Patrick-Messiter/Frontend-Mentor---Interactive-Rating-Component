@@ -5,9 +5,10 @@
 }
 
 .container {
-    width: 500px;
-    height: 500px;
+    width: 27em;
+    height: 27em;
     background-color: gray;
+    border-radius: 20px;
 }
 
 .tab {
@@ -18,6 +19,110 @@
 
 /* Rating Page */
 
+.Rating-state {
+    display: grid;
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.star {
+    background-color:hsl(228, 45%, 44%);
+    padding: 0.9rem;
+    border-radius: 50%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.rating-title {
+    color: white;
+    font-size: 1.8rem;
+    grid-area: 2 / 1 / span 1 / span 5;
+}
+
+.rating-text {
+    grid-area: 3 / 1 / span 2 / span 5;
+}
+
+
+/*Radio Button Section */
+
+.score-container {
+    grid-area: 5 / 1 / span 2 / span 5;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label.radio {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio_input {
+    display: none;
+}
+
+.radio_radio {
+    background-color: hsla(213, 17%, 38%, 1);
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.radio_radio:hover {
+    background-color: orange;
+    transition: 0.1s;
+}
+
+.radio_input:checked + .radio_radio {
+    opacity: 1;
+    background-color: green;
+}
+
+.radio_input:checked ~ .radio_radio {
+    background-color: orange;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+/* Button Section */
+
+
+.button-container {
+    display: flex;
+    grid-area: 7 / 1 / span 2 / span 5;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#score-submit {
+    background-color: orange;
+    color: white;
+    border-radius: 500px;
+    border:1px solid orange;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+
+#score-submit:hover {
+    color: orange;
+    background-color:white;
+    transition: 0.3s;
+}
 
 
 
