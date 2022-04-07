@@ -2,13 +2,23 @@
 
 * {
     font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(217, 12%, 63%);
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     width: 27em;
     height: 27em;
-    background-color: gray;
+    background-image: radial-gradient(at 50% 0%, hsl(216, 12%, 54%), hsl(213, 19%, 18%));
     border-radius: 20px;
+    margin-top: 10%;
 }
 
 .tab {
@@ -31,7 +41,7 @@
 
 
 .star {
-    background-color:hsl(228, 45%, 44%);
+    background-color:hsl(213, 19%, 18%);
     padding: 0.9rem;
     border-radius: 50%;
     grid-area: 1 / 1 / span 1 / span 1;
@@ -41,10 +51,14 @@
     color: white;
     font-size: 1.8rem;
     grid-area: 2 / 1 / span 1 / span 5;
+    margin-bottom: 0;
+    margin-top: 10%;
+    letter-spacing: 0.1rem;
 }
 
 .rating-text {
     grid-area: 3 / 1 / span 2 / span 5;
+    line-height: 1.5rem;
 }
 
 
@@ -81,7 +95,7 @@ label.radio {
 }
 
 .radio_radio:hover {
-    background-color: orange;
+    background-color: hsl(25, 97%, 53%);
     transition: 0.1s;
 }
 
@@ -91,7 +105,7 @@ label.radio {
 }
 
 .radio_input:checked ~ .radio_radio {
-    background-color: orange;
+    background-color: hsl(25, 97%, 53%);
     opacity: 1;
     transition: 0.3s;
 }
@@ -109,17 +123,17 @@ label.radio {
 
 
 #score-submit {
-    background-color: orange;
+    background-color: hsl(25, 97%, 53%);
     color: white;
     border-radius: 500px;
-    border:1px solid orange;
+    border:1px solid hsl(25, 97%, 53%);
     text-align: center;
     height: 50%;
     width: 100%;
 }
 
 #score-submit:hover {
-    color: orange;
+    color: hsl(25, 97%, 53%);
     background-color:white;
     transition: 0.3s;
 }
@@ -128,10 +142,30 @@ label.radio {
 
 /* Thankyou Page */
 
+.Thankyou-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
 
+#rating-sentence {
+    color: hsl(25, 97%, 53%);
+    background-color:hsla(213, 17%, 38%, 1);
+    padding: 0.5rem;
+    border-radius: 500px;
+    margin: 10% 0 0 0;
+}
 
+#rating-score {
+    color:hsl(25, 97%, 53%);
+}
 
-
+#thankyou-text {
+    line-height: 1.5rem;
+    text-align: center;
+}
 
 
 .attribution {
@@ -141,4 +175,25 @@ label.radio {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+/* MOBILE SECTION */
+
+@media only screen and (max-width: 450px) {
+    
+    * {
+        font-size: 14px;
+    }
+
+
+    .container {
+        width: 90%;
+    }
+
+    .score-container {
+        height: 70%;
+        padding-top: 10%;
+    }
+
 }

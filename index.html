@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
-  
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
@@ -45,12 +45,14 @@
         <button id="score-submit" type="button">SUBMIT</button>
       </div>
     </div>
-    <div class="Thankyou-state tab" id="Thankyou-state">
-      <img src="images\illustration-thank-you.svg" alt="thank you image">
-      <p>You selected <span id="rating-score"></span> out of 5</p>
-      <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    <div class="Thankyou tab" id="Thankyou-state">
+      <div class="Thankyou-container">
+        <img src="images\illustration-thank-you.svg" alt="thank you image">
+        <p id="rating-sentence">You selected <span id="rating-score"></span> out of 5</p>
+        <h2 class="rating-title">Thank you!</h2>
+        <p id="thankyou-text">We appreciate you taking the time to give a rating. If you ever need more support, 
         don&#39;t hesitate to get in touch!</p>
+      </div>
     </div>
   </form>
   <div class="attribution">
